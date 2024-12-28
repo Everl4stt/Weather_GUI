@@ -1,6 +1,5 @@
 import requests
 from configs import URL, API_METHOD, KEY
-from tkinter import messagebox
 from io import BytesIO
 from PIL import Image
 
@@ -16,8 +15,9 @@ def get_weather(city):
     response = requests.get(uri, params=params)
     if response.ok:
         data = response.json()
+        print(data)
         return data
-    return messagebox.showerror("Ошибка", "Введенные данные не корректны")
+    return False
 
 # Получение картинки по запросу
 def get_image(url):
