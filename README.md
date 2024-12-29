@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 ▶️ 3. Запуск приложения
 ```bash
-python app.py
+python main.py
 ```
 🖥️ Демонстрация приложения:
 
